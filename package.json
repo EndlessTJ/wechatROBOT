@@ -1,0 +1,20 @@
+{
+  "name": "wx-robot",
+  "version": "1.0.0",
+  "description": "A WeChat automatic response robot.",
+  "main": "index.js",
+  "dependencies": {
+    "opn": "^5.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "wechat",
+    "robot",
+    "js"
+  ],
+  "author": "doterlin",
+  "license": "MIT"
+}
