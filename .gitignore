@@ -1,0 +1,13 @@
+# Ignore .DS_Store files on OS X
+.DS_Store
+
+.env
+
+.idea/
+node_modules
+
+
+*.log
+
+
+
