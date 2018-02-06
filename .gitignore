@@ -3,9 +3,8 @@
 
 .env
 
-.idea/
+.idea
 node_modules
-
 
 *.log
 
