@@ -21,7 +21,7 @@ var formatTuring = function (res) {
         })
     }
     return replyMsg;
-}
+};
 
 var turing = function (casperIns, msg) {
     var param = {
@@ -32,7 +32,7 @@ var turing = function (casperIns, msg) {
 
     casperIns.echo('turing....');
     ajax.post(casperIns, CONST.TURING_URL, param, function (res) {
-        console.log('turing res:' + JSON.stringify(res))
+        console.log('turing res:' + JSON.stringify(res));
         var errorCode = [40001, 40002, 40004, 40007];
 
         if (errorCode.indexOf(res.code) >= 0) {

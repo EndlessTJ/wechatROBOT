@@ -18,6 +18,7 @@ function isLogin(casperIns) {
 
 //开始生成和处理二维码
 qrcode.start = function (casperIns) {
+    // casperIns 是casperIns的this对象
     var ts = casperIns;
     var qrUrl = ts.getElementAttribute(WXDOM.QR_CODE, 'src');
 
