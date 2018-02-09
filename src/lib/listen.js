@@ -38,14 +38,14 @@ listen.start = function (casperIns) {
     var ts = casperIns;
     // 监听新消息
     function loopListenNewMassage() {
-        ts.echo('执行监听新消息：loopListenNewMassage()...')
+        ts.echo('执行监听新消息：loopListenNewMassage()...');
         ts.unwait();
         ts.waitFor(function checkMsgChange() {
             var msgAttrValues = ts.getElementsAttribute(WXDOM.MSG, WXDOM.MSG_ID_ATTR);
             if (msgAttrValues.length == 0) {
                 return false;
             }
-            var lastMsgId = JSON.parse(msgAttrValues[msgAttrValues.length - 1]).msgId;
+            var lastMsgId = JSON.parse(msgAttrValues[msgAttrValues.length - 1]).msgId;// 获取信息的msgid
             if (initData.targetMessageIds.indexOf(lastMsgId) < 0) {
                 initData.lastMsgId = lastMsgId;
                 return true;

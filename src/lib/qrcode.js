@@ -20,7 +20,7 @@ function isLogin(casperIns) {
 qrcode.start = function (casperIns) {
     // casperIns 是casperIns的this对象
     var ts = casperIns;
-    var qrUrl = ts.getElementAttribute(WXDOM.QR_CODE, 'src');
+    var qrUrl = ts.getElementAttribute(WXDOM.QR_CODE, 'src'); // casper获取第一个匹配元素的属性
 
     ts.echo('正在加载二维码...');
     ts.waitForResource(qrUrl, function () {

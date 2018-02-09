@@ -8,13 +8,13 @@ var hello    = require('./src/lib/hello');
 var machine  = require('./src/lib/machine');
 
 // welcome
-casper.echo(require('./src/lib/logo').string);
+casper.echo(require('./src/lib/logo').string); // 输出标志
 console.log('正在加载网页...');
 casper.start(CONST.URL);
 
 //二维码与登录
 casper.then(function () {
-    qrcode.start(this);
+    qrcode.start(this); // qrcode用于生成微信网页登录二维码，以及检测登录状态
 });
 
 // 等待加载聊天信息 & 搜索目标微信号
@@ -22,7 +22,7 @@ casper.then(function () {
 casper.then(function () {
     casper.waitWhileVisible(WXDOM.LOGIN_LOADING, function () {
         this.echo("加载最近聊天信息完毕！");
-        searchWx(this, CONST.TARGET_NICK)
+        searchWx(this, CONST.TARGET_NICK)// 搜索出要聊天的对象，并打开聊天窗口
     }, function () {
         this.echo('加载聊天信息失败!');
         this.exit();

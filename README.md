@@ -1,9 +1,3 @@
-![](http://upload-images.jianshu.io/upload_images/3169607-74099cb906bf59f2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-[![Travis](https://img.shields.io/travis/rust-lang/rust.svg)](https://github.com/doterlin/wechat-robot)
-[![MIT](https://img.shields.io/npm/l/express.svg)](https://github.com/doterlin/wechat-robot/blob/master/LICENSE)
-[![copyRight](https://img.shields.io/badge/power%20by-doterlin-orange.svg)](https://github.com/doterlin)
-
 
 >基于`phantomjs`和web端微信开发的聊天机器人。使用的微信账号（即充当机器人的账号）为个人账号，可自定义指令。
 # 效果
@@ -52,7 +46,7 @@ git clone https://github.com/doterlin/wechat-robot.git
 找到并配置好`/config/const.js`
 ```
 //机器人名字
-var ROBOT_NAME = "小强";
+var ROBOT_NAME = "微信机器人";
 
 module.exports = {
     //微信web版地址
@@ -69,7 +63,7 @@ module.exports = {
 
     //锁定的微信号备注，注意是备注；如果是群聊则填群聊名称即可。
     //填写的名称请预先在手机微信上搜索确认搜索结果是否出现在第一个
-    'TARGET_NICK'  : '二十投小分队',
+    'TARGET_NICK'  : '聊天对象',
 
     //启动时打招呼消息
     'HELLO_WORLD'  : '[闪电]' + ROBOT_NAME + '[闪电]已启动...',
@@ -227,25 +221,3 @@ module.exports =  {
 > 2.UI化控制台（`node.js web`同步命令log及部分操作）  
 > 3.支持图片识别和回复（如斗图）  
 > 4.更多实用指令  
-
-# MIT License
-
-Copyright (c) 2017 doterlin
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
