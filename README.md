@@ -212,12 +212,6 @@ module.exports =  {
 另外，在执行各个步骤时会把浏览器截图保存到`/static/img`，方便查看浏览器渲染情况。比如每获取到一条新消息时会截图并覆盖为`lastNewMsgContent.png`。
 
 
-> **二次开发若方便请`Fork`贡献给本[Github](https://github.com/doterlin/wechat-robot)，共同完善项目！**
 
 
-# 版本预告
-下一版本更新但不限于以下内容：
-> 1.支持绑定多个微信帐号  
-> 2.UI化控制台（`node.js web`同步命令log及部分操作）  
-> 3.支持图片识别和回复（如斗图）  
-> 4.更多实用指令  
+
